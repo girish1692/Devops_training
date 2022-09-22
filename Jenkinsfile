@@ -1,23 +1,24 @@
 pipeline
-agent any
-{ 
-	stages
-	{
-		stage('continuous download')
+{	
+	agent any
+	{ 
+		stages
 		{
-			steps
+			stage('continuous download')
 			{
-				git 'https://github.com/spy16/droplets.git'
-			}			
-		}	
-		stage(' build ')
-		{
-			steps
-			{
-				sh 'mvn clean package'
+				steps
+				{
+					git 'https://github.com/spy16/droplets.git'
+				}			
 			}	
+			stage(' build ')
+			{
+				steps
+				{
+					sh 'mvn clean package'
+				}	
+			}
 		}
-	
 	}
 }
 
