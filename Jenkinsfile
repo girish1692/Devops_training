@@ -11,12 +11,9 @@ agent any
 			}	
 		stage(' build ')
 		{
-			sh mvn clean package
+			sh 'mvn clean package'
 		}
-		stage(' deployment ')
-		{
-			deploy adapters:[tomcat9(url: 'http://172.31.36.158:8080/')]
-		}
+		
 	}
 }
 
