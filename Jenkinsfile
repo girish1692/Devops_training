@@ -8,7 +8,8 @@ agent any
 			steps
 			{
 				git 'https://github.com/spy16/droplets.git'
-			}	
+			}			
+		}	
 		stage(' build ')
 		{
 			steps
