@@ -1,7 +1,6 @@
 pipeline
 {	
-	agent any
-	{ 
+	agent any 
 		stages
 		{
 			stage('continuous download')
@@ -19,8 +18,8 @@ pipeline
 				}	
 			}
 		}
-	}
 }
+
 
   
        
