@@ -7,7 +7,7 @@ agent any
 		{
 			steps
 			{
-				git 'https://github.com/girish1692/Devops_training.git'
+				git 'https://github.com/spy16/droplets.git'
 			}	
 		stage(' build ')
 		{
