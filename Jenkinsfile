@@ -7,14 +7,14 @@ pipeline
 			{
 				steps
 				{
-					git 'https://github.com/spy16/droplets.git'
+					git 'https://github.com/pavanoltraining/JenkinsPipelineDemoProject.git'
 				}			
 			}	
 			stage(' build ')
 			{
 				steps
 				{
-					sh 'mvn clean package'
+					sh 'mvn -f JenkinsPipelineDemoProject/pom.xml clean package'
 				}	
 			}
 		}
